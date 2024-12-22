@@ -32,7 +32,7 @@ jobs:
         run: npm test
       - name: Output information
         run: |
-          echo "MOONGODB_USERRNAME: ${{ env.MONGODB_USERNAME }}"
+          echo "DB_USERRNAME: ${{ env.MONGODB_USERNAME }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
